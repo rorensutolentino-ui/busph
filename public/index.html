@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SummarAIzer</title>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <div class="logo-circle">SA</div>
+      <span class="logo-text">SummarAIzer</span>
+    </div>
+
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </header>
+
+  <!-- TITLE -->
+  <section class="title-block">
+    <h1>SummarAIzer</h1>
+    <p class="subtitle">Short. Smart. Study-ready.</p>
+  </section>
+
+  <h2 class="headline">Turn long text into short, clear summaries — fast.</h2>
+
+  <!-- MAIN TWO-PANEL CONTAINER -->
+  <main class="main-box">
+    <div class="left-panel">
+
+      <!-- MODE + LENGTH BAR -->
+      <div class="bar">
+
+        <div class="tabs section">
+          <span class="label">Modes:</span>
+          <button class="tab active" data-mode="paragraph">Paragraph</button>
+          <button class="tab" data-mode="bullet">Bullet Points</button>
+        </div>
+
+        <div class="length section">
+          <span class="label">Summary Length:</span>
+          <input type="range" id="lengthSlider" min="1" max="3" value="1"/>
+          <span id="lengthLabel">Short</span>
+        </div>
+
+      </div>
+
+      <!-- INPUT BOX -->
+      <textarea id="textInput" placeholder='Enter or paste your text here'></textarea>
+
+      <div class="left-controls">
+        <button id="pasteBtn" class="control-btn">Paste Text</button>
+        <p class="word-count" id="wordCount">0 words</p>
+      </div>
+
+      <button id="summarizeBtn" class="control-btn primary">Summarize</button>
+
+    </div>
+
+    <div class="right-panel">
+      <div class="summary-header">
+        <h3>Summary Result</h3>
+        <button id="clearBtn" class="control-btn danger">Clear</button>
+      </div>
+
+      <div class="summary-box" id="summaryBox">
+        <p class="placeholder">Summary result…</p>
+      </div>
+
+      <button id="copyBtn" class="control-btn copy">Copy Text</button>
+    </div>
+  </main>
+
+  <!-- INFO SECTION -->
+  <section class="info-section">
+    <div id="info1">
+      <h4>How it works</h4>
+      <p>We use a frequency-based extractive summarizer that selects key sentences based on relevance.</p>
+    </div>
+
+    <div id="info2">
+      <h4>Why it helps students</h4>
+      <ul>
+        <li>Speeds up reading & note-taking</li>
+        <li>Extracts key points from long articles</li>
+        <li>Helps with study guides & research</li>
+      </ul>
+    </div>
+
+    <div id="info3">
+      <h4>Developers:</h4>
+      <ul>
+        <li>Tolentino, Cathlene A.</li>
+        <li>Tolentino, Lawrence Dave P.</li>
+        <li>Valenzuela, John Oliver R.</li>
+      </ul>
+    </div>
+  </section>
+
+  <p class="verify">Always verify the summary — context checking is recommended.</p>
+
+  <footer class="footer">FINAL PROJECT IN ITEP 308</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

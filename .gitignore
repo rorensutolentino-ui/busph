@@ -1,0 +1,41 @@
+# Composer
+/vendor/
+composer.phar
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Railway
+.railway/
+
+# Build files
+node_modules/
+dist/
+build/
+
+# Keep composer files
+!composer.json
+!composer.lock
+
